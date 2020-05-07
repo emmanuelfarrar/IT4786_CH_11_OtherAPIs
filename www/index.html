@@ -28,19 +28,34 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    
-    <title>App Title</title>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <style>
+      #container {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      input {
+        margin-bottom: 15px;
+        
+        }
+      button {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    </style>
+
+    <title>CH 11 Other PhoneGap APIs</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Chapter & Title</a>
+        <a class="navbar-brand" href="#">Other PhoneGap APIs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Section # <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="index.html">11.1 PhoneGap File API<span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="sectionTwo.html">Section #</a>
             <a class="nav-item nav-link" href="sectionThree.html">Section #</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -50,7 +65,13 @@
 
         
     <div id="container">
-        <h1>Section # Title</h1>
+        <h2>11.1 PhoneGap File API</h2>
+        <ul data-role="list-view" data-inset="true" id="masterList"></ul>
+        <input type="text" id="listItem" class="form-control" placeholder="Default input" />
+        <button class="btn btn-primary disabled" id="btnAddToList" onclick="addToList()">Add To List</button>
+        <button class="btn btn-primary disabled" id="btnSaveList" onclick="saveList()">Save The List</button>
+        <button class="btn btn-primary disabled" id="btnClearList" onclick="clearList()">Clear The List</button>
+        <button class="btn btn-primary disabled" id="btnLoadList" onclick="loadList()">Load The List</button>
         
     </div><!--container-->
             

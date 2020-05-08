@@ -18,20 +18,21 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     
-    <title>App Title</title>
+    <title>Other PhoneGap APIs</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Chapter & Title</a>
+        <a class="navbar-brand" href="#">Other PhoneGap APIs</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Section # <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="sectionTwo.html">Section #</a>
-            <a class="nav-item nav-link active" href="sectionThree.html">Section #</a>
+            <a class="nav-item nav-link" href="index.html">11.1 PhoneGap File API</a>
+            <a class="nav-item nav-link" href="sectionTwo.html">11.2 PhoneGap Device API</a>
+            <a class="nav-item nav-link active" href="sectionThree.html">11.3 PhoneGap Contacts API<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="sectionThree.html">11.4 PhoneGap Notifications API</a>
             <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </div>
         </div>
@@ -39,7 +40,16 @@
 
         
     <div id="container">
-        <h1>Section # Title</h1>
+        <h2>11.3 PhoneGap Contacts API</h2>
+        <label for="first">First</label>
+        <input type="text" id="first" />
+        <label for="last">Last</label>
+        <input type="text" id="last" />
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" />
+        <button id="btnSave" onclick="saveContact()">Save To Contacts</button>
         
     </div><!--container-->
             
